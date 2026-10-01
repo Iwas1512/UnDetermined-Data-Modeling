@@ -1,0 +1,4 @@
+ticker,num_10k_filings,latest_filing_date,risk_factors_words,price_data_days,volatility
+AAPL,11,2025-10-31,0,1257,0.019962
+JPM,1,2026-02-13,0,1257,0.020498
+PFE,6,2026-02-26,0,1257,0.017313
