@@ -38,6 +38,10 @@ jupyter nbconvert --to notebook --execute --inplace notebooks/progress_report.ip
 
 ## Data
 
-The raw OPRA files and the processed quote tables are licensed market data and are **not committed** (`data/` is
-git-ignored). Source: Databento `OPRA.PILLAR`, schemas `definition` and `statistics`, parents `SPXW.OPT` and `NDXP.OPT`,
-one file per trading day.
+The derived tables the analysis runs on (forwards, SVI fits, daily features, the ML table; about 5 MB) are committed in
+`data/processed/`. See [`data/README.md`](data/README.md) for what each contains. So you can run the notebook and
+`scripts/04_build_viewer.py` straight after cloning.
+
+The raw OPRA files and the per-option quote tables (`options_*.parquet`) are licensed market data and are **not committed**.
+Source: Databento `OPRA.PILLAR`, schemas `definition` and `statistics`, parents `SPXW.OPT` and `NDXP.OPT`, one file per
+trading day. Steps 1–3 below need them.
