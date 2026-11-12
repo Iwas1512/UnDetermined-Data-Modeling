@@ -1,5 +1,6 @@
 .venv/
 __pycache__/
 .ipynb_checkpoints/
-data/
-*.parquet
+# Licensed quote-level market data stays local: raw OPRA files and the per-option tables.
+data/raw/
+data/processed/options_*.parquet
